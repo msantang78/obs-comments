@@ -1,0 +1,77 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#comment {
+  background-color: #686767;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 400;
+  line-height: 24px;
+  transition: all 0.6s ease-out;
+  padding: 15px;
+  background-color: rgb(56, 57, 61);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  display: flex;
+}
+
+#name {
+  color: rgb(242, 242, 242);
+  font-weight: 600;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+#text {
+  color: rgba(242, 242, 242, 0.87);
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+#row {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+}
+
+#commentContainer {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.like-icon {
+  position: fixed;
+  bottom: 50px; /* Adjust the starting position from the bottom */
+  right: 50px; /* Adjust the starting position from the right */
+  opacity: 1;
+  animation: fadeOutUp 2s forwards; /* 2s animation duration, forwards to retain final state */
+}
+
+@keyframes fadeOutUp {
+  0% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-200px); }
+  100% { opacity: 0; transform: translateY(-400px); } /* Adjust this value to control how much it moves up */
+}
+
+.heart-icon {
+  font-size: 48px;
+}
