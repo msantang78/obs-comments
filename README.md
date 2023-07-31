@@ -1,5 +1,7 @@
 # Preact OBS Plugin for live Minds comments
 
+It supports live comments & up votes.
+
 ![Live comments](/demo/demo.jpg "Live comments & votes")
 
 # How to use it
