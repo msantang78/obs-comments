@@ -1,5 +1,7 @@
 # Preact OBS Plugin for live Minds comments
 
+![Live comments](/demo/demo.jpg "Live comments & votes")
+
 # How to use it
 
 A demo is live on https://obs-comments.vercel.app
