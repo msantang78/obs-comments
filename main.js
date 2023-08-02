@@ -187,7 +187,6 @@ function Comment({ comment }) {
       hour: 'numeric',
       minute: 'numeric',
       hour12: true,
-      timeZone: 'Europe/Bucharest', // 'Europe/Bucharest' is the timezone identifier for Romania
     });
   return html`
     <div id="comment" key=${comment.guid}>
