@@ -1,6 +1,6 @@
 # Web OBS Plugin for live comments (minds.com)
 
-It supports live comments & up votes.
+This plugins supports live comments & up votes.
 
 ![Live comments](/demo/demo.jpg "Live comments & votes")
 
@@ -23,7 +23,7 @@ For instance `https://obs-comments.vercel.app/?link=https://www.minds.com/newsfe
 
 ## Running it locally 
 
-For simplicity we are using Node & [serve](https://www.npmjs.com/package/serve) on this example, but any web server will work.
+For simplicity, we are using Node & [serve](https://www.npmjs.com/package/serve) on this example, but any web server will work.
 
 Clone the repository
   ```bash
