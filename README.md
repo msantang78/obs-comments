@@ -1,5 +1,7 @@
 # Web OBS Plugin for live comments (minds.com)
 
+It supports live comments & up votes.
+
 ![Live comments](/demo/demo.jpg "Live comments & votes")
 
 Simple web plugin to include live comments and up votes from a Minds post.
