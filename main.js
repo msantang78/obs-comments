@@ -6,6 +6,7 @@ import {
   useRef,
   useMemo,
 } from "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module";
+
 import htm from "https://unpkg.com/htm?module";
 
 import autoAnimate from "https://www.unpkg.com/@formkit/auto-animate@0.7.0/index.mjs?module";
@@ -56,8 +57,8 @@ function useAutoAnimate(options) {
 
 /**
  * Fetch a comment from the API
- * 
- * I'm using a proxy to avoid the CORS errors here, we should provide this 
+ *
+ * I'm using a proxy to avoid the CORS errors here, we should provide this
  * as an static page inside minds.com avoiding the need of it.
  */
 async function getComment(entity_guid, guid, parent_path) {
@@ -152,7 +153,7 @@ function MindComments() {
   const [parent] = useAutoAnimate();
 
   if (postGuid === -1) {
-    return html`<h1>Wrong link format!</h2>`;
+    return html`<h1>Wrong link format!</h2><br/><span>Please check</span>`;
   }
 
   return html`
