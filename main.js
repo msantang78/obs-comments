@@ -184,11 +184,16 @@ function Comment({ comment }) {
   const channel = comment.ownerObj;
   const name =
     channel.name && channel.name !== channel.username ? channel.name : "";
+  const time = new Date(comment.time_created * 1000).toLocaleString('en-US', {
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true,
+    });
   return html`
     <div id="comment" key=${comment.guid}>
       <img src=${avatar} id="avatar" />
       <div>
-        <div id="name">${name || channel.username}</div>
+        <div id="name"><b>${name || channel.username}</b> (@${channel.username}) <span id="time">${time}</span></div>
         <div id="text">${comment.description}</div>
       </div>
     </div>
